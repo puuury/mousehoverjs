@@ -1,9 +1,3 @@
-// let pos = document.documentElement;
-//             pos.addEventListener( 'mousemove', e => {
-//                 pos.style.setProperty('--x', e.clientX + 'px')
-//                 pos.style.setProperty('--y', e.clientY + 'px')
-//             })
-
 let pos = document.documentElement;
             let x = 0, y = 0;
 
@@ -20,3 +14,5 @@ let pos = document.documentElement;
 
             document.addEventListener('mousemove', updateMousePosition);
             requestAnimationFrame(animate);
+
+

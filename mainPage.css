@@ -1,48 +1,178 @@
 section {
     height: 85vh;
     position: relative;
-    max-width: 100vw;
+    max-width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    /* border: 1px solid var(--main-color); */
-
 }
 
 section .img {
     width: 500px;
     height: 500px;
-    /* border: 1px solid var(--main-color); */
     border-radius: 50%;
-    position: relative;
+    position: absolute;
     filter: grayscale(100%);
-    transition: 0.5s;
+    transition: opacity 0.5s linear;
+    z-index: 199;
+    opacity: 0.5;
 }
 .img::before {
     content: '';
-    position: absolute; /* برای قرار دادن تصویر پشت محتوای اصلی */
+    position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background: url('header-removebg-preview.png') no-repeat center center; /* مسیر درست فایل تصویر */
-    background-size: cover; /* اندازه تصویر به گونه‌ای که تمام بخش‌ها پوشش داده شود */
-    border-radius: 50%; /* اگر می‌خواهید تصویر نیز دایره‌ای باشد */
-    opacity: 0.9;
-    /* box-shadow: -24px 15px 100px var(--main-color); */
-    filter: drop-shadow(10px 15px 50px var(--main-color));
+    background: url('header-removebg-preview.png') no-repeat center center;
+    background-size: cover;
+    border-radius: 50%;
+    opacity: 1;
+    filter: drop-shadow(10px 15px 90px var(--main-color));
+    color: #f5f5f5;
 }
 .img:hover {
     filter: grayscale(0);
-    transition: 0.5s;
+    transition: opacity 0.5s linear;
+}
+.imgText {
+    position: absolute;
+    font-size: 2.6em;
+    width: 100%;
+    top: 11%;
+    left: 21%;
+    color: #f5f5f5;
+    font-family: var(--font-family);
+    opacity: 0.1;
+    animation: goBack 1.2s ease-in-out 1 forwards;
+}
+.img:hover .imgText {
+    opacity: 1;
+    color: var(--main-color);
+    text-shadow: -24px 15px 100px var(--shadow-color);
+    animation: goToright 1.2s ease-in-out 1 forwards;
+}
+@keyframes goBack {
+    0%{
+        transform: translateX(300px);
+        transform: 1.2s;
+        opacity: 1;
+    }
+    100%{
+        transform: translateX(0);
+        color: transparent;
+        opacity: 0.4;
+    }
 
 }
+@keyframes goToright {
+    0%{
+        transform: translateX(0);
+        color: transparent;
+        opacity: 0.4;
+    }
+    
+    100%{
+        transform: translateX(300px);
+        transform: 1.2s;
+        opacity: 1;
+    }
+}
 section h2 {
-    position: absolute;
     color: var(--main-color);
     -webkit-text-stroke: 1px rgba(255, 0, 0, 0.438);
     text-shadow: -24px 15px 100px var(--shadow-color);
-    font-family:var(--font-family);
+    font-family: var(--font-family);
     font-size: var(--font-size);
     cursor: default;
+    margin: 0; 
+}
+.h2Wrapp {
+    padding: 40px 0;
+    position: absolute;
+    width: 100%; 
+    display: grid;
+    grid-template-columns: repeat(10, 1fr); 
+    justify-items: center; 
+    align-items: center; 
+    text-align: center; 
+    z-index: 106;
+}
+.h2Wrapp h2 {
+    font-size: 10em;
+}
+.h2farsi {
+    position: absolute;
+    top: 50%;
+    z-index: 107;
+}
+@keyframes moveUpDown {
+    0% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    50% {
+        transform: translateY(-50px); 
+        opacity: 0.4;
+    }
+    100% {
+        transform: translateY(0); 
+        opacity: 1;
+    }
+}
+.moveH2-1 {
+    display: inline-block;
+    animation: moveUpDown 4.5s ease-in-out infinite;
+}
+.moveH2-2{
+    display: inline-block;
+    animation: moveUpDown 4.5s ease-in-out infinite;
+    animation-delay: 0.5s;
+}
+.moveH2-3 {
+    display: inline-block;
+    animation: moveUpDown 4.5s ease-in-out infinite;
+    animation-delay: 1s;
+}
+.moveH2-4{
+    display: inline-block;
+    animation: moveUpDown 4.5s ease-in-out infinite;
+    animation-delay: 1.5s;
+
+}
+.moveH2-5 {
+    display: inline-block;
+    animation: moveUpDown 4.5s ease-in-out infinite;
+    animation-delay: 2s;
+
+}
+.moveH2-6{
+    display: inline-block;
+    animation: moveUpDown 4.5s ease-in-out infinite;
+    animation-delay: 2.5s;
+
+}
+.moveH2-7 {
+    display: inline-block;
+    animation: moveUpDown 4.5s ease-in-out infinite;
+    animation-delay: 3s;
+
+}
+.moveH2-8{
+    display: inline-block;
+    animation: moveUpDown 4.5s ease-in-out infinite;
+    animation-delay: 3.5s;
+
+}
+.moveH2-9 {
+    display: inline-block;
+    animation: moveUpDown 4.5s ease-in-out infinite;
+    animation-delay: 4s;
+
+}
+.moveH2-10{
+    display: inline-block;
+    animation: moveUpDown 4.5s ease-in-out infinite;
+    animation-delay: 4.5s;
+
 }

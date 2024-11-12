@@ -5,7 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>mHOVER</title>
     <link rel="stylesheet" href="app.css">
-    <!-- <link rel="stylesheet" href="header.css"> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
+
+    <script defer src="main.js"></script>
 </head>
 <body>
     <header>
@@ -55,20 +58,64 @@
     
 
     <section>
-        <div class="img"></div>
-        <h2>EscapeRoom</h2>
-         
-        <h2 style="top:45%">اتاق فــرار</h2>
-
+        <div class="img">
+            <div class="imgText">
+                <p>بنظرت جراتش رو داری؟؟</p>
+            </div>
+        </div>
+        <div class="h2Wrapp">
+            <h2 class="moveH2-1">E</h2>
+            <h2 class="moveH2-2">s</h2>
+            <h2 class="moveH2-3">c</h2>
+            <h2 class="moveH2-4">a</h2>
+            <h2 class="moveH2-5">p</h2>
+            <h2 class="moveH2-6">e</h2>
+            <h2 class="moveH2-7">R</h2>
+            <h2 class="moveH2-8">o</h2>
+            <h2 class="moveH2-9">o</h2>
+            <h2 class="moveH2-10">m</h2>
+         </div>
+         <div class="h2farsi">
+            <h2>اتاق فــرار</h2>
+         </div>
+        
         <div class="lightBox"></div> 
 
-        <script src="app.js"></script>
     </section>
-    <section>
-        <h2>Section 2</h2>
+    
+    <section class="SectionTwo">
+        <div class="imgBoxTwo">
+            <img src="Acompletelyred.png" alt="">
+        </div>
+        <div class="imgTextTwo">
+            <h2>Are You Ready?</h2>
+            <h2 style="font-size: 2em;">Ok Scroll Dwon</h2>
+            <div class="scrollDown">
+                <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 24 24" style="fill: rgba(255, 0, 0, 1);transform: ;msFilter:;"><path d="M16.939 10.939 12 15.879l-4.939-4.94-2.122 2.122L12 20.121l7.061-7.06z"></path><path d="M16.939 3.939 12 8.879l-4.939-4.94-2.122 2.122L12 13.121l7.061-7.06z"></path></svg>
+    
+            </div>
+        </div>
+        
     </section>
-    <section>
+    
+    <div class="wrapper">
+        <div class="content">
+          <section class="section hero">
+             <img style="width: 500px; border-radius: 50%; border: 10px solid rgba(255, 0, 0, 0.397);" src="025-removebg-preview.png" alt="">
+            <div class="scrollDown">
+                <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 24 24" style="fill: rgb(255, 102, 0);transform: ;msFilter:;"><path d="M16.939 10.939 12 15.879l-4.939-4.94-2.122 2.122L12 20.121l7.061-7.06z"></path><path d="M16.939 3.939 12 8.879l-4.939-4.94-2.122 2.122L12 13.121l7.061-7.06z"></path></svg>
+            </div>
+          </section>
+        </div>
+        <div class="image-container">
+          <img src="https://assets-global.website-files.com/63ec206c5542613e2e5aa784/643312a6bc4ac122fc4e3afa_main%20home.webp" alt="image">
+        </div>
+      </div>
+      <section style="height: 100vh;">
         <h2>Section 3</h2>
     </section>
+    <script src="app.js"></script>
+
+
 </body>
 </html>

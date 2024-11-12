@@ -1,0 +1,53 @@
+.SectionTwo {
+    display:flex;
+    max-width: 100%;
+    height: 60vh;
+    margin-top: 10%;
+    position: relative;
+}
+.imgBoxTwo {
+    width: 100%;
+    position: absolute;
+    z-index: 2;
+}
+.imgBoxTwo img {
+    min-width: 40%;
+    
+}
+.imgTextTwo {
+    width: 100%;
+    position: absolute;
+    left: 13%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+}
+.imgTextTwo h2 {
+    color: var(--main-color);
+    -webkit-text-stroke: 1px rgba(255, 0, 0, 0.438);
+    text-shadow: -24px 15px 100px var(--shadow-color);
+    font-family: var(--font-family);
+    font-size: 7em;
+    cursor: default;
+    margin: 0; 
+}
+.scrollDown {
+    margin-top: 3%;
+    animation: scrollDown 1s linear infinite;
+}
+@keyframes scrollDown {
+    0% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    50% {
+        transform: translateY(-18px);
+        opacity: 0.2;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

@@ -4,6 +4,7 @@ header {
     align-items: center;
     justify-content: center;
     gap: 1%;
+    margin-top: 2%;
 }
 header .imgBox {
     width: 100px;
@@ -13,17 +14,12 @@ header .imgBox {
     background-size: cover;
     filter: grayscale(85%)  ;
     transition: 1s;
-
 }
 .imgBox:hover {
     filter:grayscale(0) ;
-    /* box-shadow: 4px 5px 50px var(--main-color); */
-
 }
 .imgBox img {
     object-fit: cover;
-
-
 }
 header .menuBox {
     font-size: 2em;
@@ -31,63 +27,46 @@ header .menuBox {
     width: 35%;
     height: 100%;
     display: flex;
-    justify-content: center; /* برای فاصله‌گذاری یکنواخت بین باکس‌ها */
-    align-items: center; /* برای تراز عمودی آیتم‌ها */
+    justify-content: center; 
+    align-items: center; 
     gap: 40px;
-
-
 }
 header .menuBox div {
-    padding: 10px; /* فاصله داخلی باکس‌ها */
-    
+    padding: 10px;
 }
 .mainMneuWrapp{    
     position: relative;
     cursor: pointer;
     transition: opacity 3.3s linear, visibility 3.3s linear;
-    
-
-
-
 }
 .mainMneuWrapp .menuInner {
     width: 100%;
     height: 24.5%;
     margin-bottom: 2px;
-    border: 1px solid #32e20644;
+    border: 1px solid #ffffff44;
     background: #11111163;
     color: var(--shadow-color);
     display: flex;
     justify-content: center;
     align-items: center;
     transition: 0.3s;
-    position: relative;
-
-
-
-    
+    position: relative;   
 }
 .menuInner .inInner {
     position: absolute;
     width: 250px;
     height: 400px;
-    /* background: lightcoral; */
     display: none;
     opacity: 0;
     visibility: hidden;
     background: #111111;
     transition:opacity 0.4s linear;
-
-    border: 1px solid #e00a0a44;
+    border: 1px solid #ffffff44;
     top: -80%;
     left: -110%;
     border-radius: 9px;
-    z-index: 100;
-    
-
-    
+    z-index: 201;    
 }
-
 .menuInner:hover {
     border: 1px solid #ffffff;
     background: #111111;
@@ -100,46 +79,41 @@ header .menuBox div {
     opacity: 1;
     visibility: visible;
     transition:opacity 0.4s linear;
-
 }
 .menuWrapp {
     position: absolute;
     width: 250px;
     height: 400px;
     background: #11111198;
-    border: 1px solid #e00a0a44;
+    border: 1px solid #ffffff44;
     top: 100%;
     left: -10%;
     padding: 0 15px;
     border-radius: 9px;
-    z-index: 101;
+    z-index: 201;
     display: none;
     opacity: 0;
     visibility: hidden;
     transition:opacity 0.3s linear;
-
 }
 
 .mainMneuWrapp:hover {
     margin-top: -10px;
-    /* -webkit-text-stroke: 1px #fff; */
 }
 .mainMneuWrapp:hover .menuWrapp {
     display: block;
-    opacity: 1; /* شفافیت 100% */
+    opacity: 1; 
     visibility: visible; 
     transition:opacity 0.4s linear;
-
 }
 
 .menuBox li {
-    list-style: none; /* حذف نقاط فهرست */
+    list-style: none; 
     color: var(--main-color);
-
 }
 
 .menuBox a {
-    text-decoration: none; /* حذف خط زیر لینک‌ها */  
+    text-decoration: none; 
 
 }
 .phover {

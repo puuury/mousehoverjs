@@ -10,7 +10,7 @@ header .imgBox {
     width: 100px;
     height: 100px;
     border-radius: 50%;
-    background: url(header-removebg-preview.png);
+    background: url('../img/header-removebg-preview.png');
     background-size: cover;
     filter: grayscale(85%)  ;
     transition: 1s;

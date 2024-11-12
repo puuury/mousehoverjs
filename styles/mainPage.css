@@ -24,7 +24,7 @@ section .img {
     left: 0;
     right: 0;
     bottom: 0;
-    background: url('header-removebg-preview.png') no-repeat center center;
+    background: url('../img/header-removebg-preview.png') no-repeat center center;
     background-size: cover;
     border-radius: 50%;
     opacity: 1;
